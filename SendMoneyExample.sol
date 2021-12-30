@@ -5,6 +5,7 @@ contract SendMoneyExample {
 
     uint public balanceReceived;
     
+    // Receive money
     function receiveMoney() public payable {
         balanceReceived += msg.value;
     }
